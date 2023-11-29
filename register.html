@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: Sacramento;
+      src: url(./fonts/Sacramento-Regular.ttf);
+    }
+    @font-face {
+      font-family: Plus-Jakarta-Sans;
+      src: url(./fonts/PlusJakartaSans-VariableFont_wght.ttf);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      font-family: Plus-Jakarta-Sans;
+    }
+    .background {
+      flex: 0 0 460px;
+      background: url('./assets/Rectangle-289.png');
+      background-position: center;
+      background-size: cover;
+    }
+    .content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 61px;
+      align-items: left;
+      justify-content: center;
+      text-align: left;
+    }
+    h2{
+      font-size: 22px;
+      color: #8E6447;
+;
+    }
+    p {
+      font-size: 16px;
+    }
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .logo-container {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .logo-container img {
+      margin-right: 10px;
+    }
+    .logo-container .name{
+      font-family: Sacramento;
+      font-size: 20px;
+      padding: 1px 0 1.5px 5px;
+      text-align: center;
+      color: #8E6447;
+    }
+    .register-title{
+      margin-bottom: 20px;
+      gap: 25px;
+    }
+    .form-section {
+      margin-bottom: 20px;
+    }
+    form {
+      margin-top: 10px;
+      width: 780px;
+      height: 52px;
+      display: flex;
+      gap: 10px;
+    }
+    input {
+      flex: 1;
+      padding: 14px 13px;
+      border: 1px solid #DEDEDE;
+      border-radius: 8px;
+      outline: none;
+      background-color: #FCFDFE;
+    }
+    button {
+      width: 780px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 6px;
+      background-color: #FF8906;
+      gap: 10px;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+    .login-section {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #4F5665;
+    }
+    .login-section a{
+      margin-bottom: 20px;
+      text-align: center;
+      color: #FF8906;
+    }
+    .register{
+      width: Fill (780px);
+      height: Fixed (50px);
+      padding: 10px;
+      border-radius: 6px;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: Plus-Jakarta-Sans;
+    }
+    .login-options {
+      display: flex;
+      gap: 14px;
+    }
+    .login-options button {
+      width: 383px;
+      height: 64px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      box-shadow: 0px 4px 10px 0px #00000014;
+    }
+    
+  </style>
+  <title>Register</title>
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="content">
+    <div class="logo-container">
+      <img src="./assets/Vector.png" alt="Logo" width="32px" height="32px">
+      <div class="name">Coffee Shop</div>
+    </div>
+
+    <div class="register-title">
+      <h2>Register</h2>
+      <p>Fill the form correctly</p>
+    </div>
+
+    <div class="form-section">
+      <div>
+        <label for="fullname">Full Name</label>
+        <form action="">
+          <input type="text" id="fullname" name="fullname">
+        </form>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <form action="">
+          <input type="email" id="email" name="email">
+        </form>
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <form action="">
+          <input type="password" id="password" name="password">
+        </form>
+      </div>
+
+      <div>
+        <label for="confirm-password">Confirm Password</label>
+        <form action="">
+          <input type="password" id="confirm-password" name="confirm-password">
+        </form>
+      </div>
+    </div>
+
+    <button class="register">Register</button>
+
+    <div class="login-section">
+      <div>Have an account? <a href="">Login</a></div>
+      <div>or</div>
+    </div>
+
+    <div class="login-options">
+      <button>Facebook</button>
+      <button>Google</button>
+    </div>
+  </div>
+</body>
+</html>
