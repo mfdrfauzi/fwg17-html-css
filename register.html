@@ -20,7 +20,7 @@
     }
     .background {
       flex: 0 0 460px;
-      background: url('./assets/Rectangle-289.png');
+      background: url('./assets/img/Rectangle-289.png');
       background-position: center;
       background-size: cover;
     }
@@ -36,7 +36,6 @@
     h2{
       font-size: 22px;
       color: #8E6447;
-;
     }
     p {
       font-size: 16px;
@@ -44,8 +43,8 @@
     label {
       font-size: 16px;
       font-weight: bold;
+      margin-bottom: 13px;
     }
-
     .logo-container {
       margin-bottom: 20px;
       display: flex;
@@ -70,18 +69,37 @@
     }
     form {
       margin-top: 10px;
-      width: 780px;
       height: 52px;
+      width: 780px;
       display: flex;
-      gap: 10px;
+      flex-direction: column;
     }
     input {
-      flex: 1;
+      height: 52px;
       padding: 14px 13px;
       border: 1px solid #DEDEDE;
       border-radius: 8px;
       outline: none;
       background-color: #FCFDFE;
+      margin-bottom: 13px;
+    }
+    input[type="text"] {
+      background-image: url('./assets/icons/profile-icon.png');
+      background-repeat: no-repeat;
+      background-position: left 9px center;
+      background-size: 24px;
+    }
+    input[type="email"] {
+      background-image: url('./assets/icons/email-icon.png');
+      background-repeat: no-repeat;
+      background-position: left 13px center;
+      background-size: 16px;
+    }
+    input[type="password"] {
+      background-image: url('./assets/icons/password-icon.png'), url('./assets/icons/show-password-icon.png');
+      background-repeat: no-repeat, no-repeat;
+      background-position: left 13px center, right 13px center;
+      background-size: 16px, 16px;
     }
     button {
       width: 780px;
@@ -93,20 +111,22 @@
       color: black;
       border: none;
       cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
     }
     .login-section {
       margin-bottom: 20px;
       text-align: center;
       color: #4F5665;
     }
-    .login-section a{
+    .login-section a {
       margin-bottom: 20px;
       text-align: center;
       color: #FF8906;
     }
-    .register{
-      width: Fill (780px);
-      height: Fixed (50px);
+    .register {
+      width: 780px;
+      height: 50px;
       padding: 10px;
       border-radius: 6px;
       gap: 10px;
@@ -127,7 +147,6 @@
       background-color: white;
       box-shadow: 0px 4px 10px 0px #00000014;
     }
-    
   </style>
   <title>Register</title>
 </head>
@@ -136,7 +155,7 @@
 
   <div class="content">
     <div class="logo-container">
-      <img src="./assets/Vector.png" alt="Logo" width="32px" height="32px">
+      <img src="./assets/img/Vector.png" alt="Logo" width="32px" height="32px">
       <div class="name">Coffee Shop</div>
     </div>
 
@@ -149,28 +168,28 @@
       <div>
         <label for="fullname">Full Name</label>
         <form action="">
-          <input type="text" id="fullname" name="fullname">
+          <input type="text" id="fullname" name="fullname" placeholder="Enter Your Full Name">
         </form>
       </div>
 
       <div>
         <label for="email">Email</label>
         <form action="">
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" placeholder="Enter Your Email">
         </form>
       </div>
 
       <div>
         <label for="password">Password</label>
         <form action="">
-          <input type="password" id="password" name="password">
+          <input type="password" id="password" name="password" placeholder="Enter Your Password">
         </form>
       </div>
 
       <div>
         <label for="confirm-password">Confirm Password</label>
         <form action="">
-          <input type="password" id="confirm-password" name="confirm-password">
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter Your Password Again">
         </form>
       </div>
     </div>
