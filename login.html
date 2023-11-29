@@ -21,7 +21,7 @@
     }
     .background {
       flex: 0 0 460px;
-      background: url('./assets/img/bakcground-register.png');
+      background: url('./assets/img/login-background.png');
       background-position: top;
       background-size: cover;
     }
@@ -29,7 +29,7 @@
       flex-grow: 1;
       display: flex;
       flex-direction: column;
-      margin: 61px 130px 142px 70px;
+      margin: 185px 130px 185px 70px;
       align-items: left;
       justify-content: center;
       text-align: left;
@@ -66,15 +66,15 @@
     .form-section > div {
       margin-bottom: 25px;
     }
-    .register-tittle{
+    .login-tittle{
       margin-top: 51px;
     }
-    .register-tittle h2{
+    .login-tittle h2{
       font-size: 22px;
       font-weight: 600;
       color: #8E6447;
     }
-    .register-tittle p {
+    .login-tittle p {
       margin-top: 25px;
       font-size: 16px;
       color: #4F5665;
@@ -96,13 +96,7 @@
       background-color: #FCFDFE;
       margin-bottom: 13px;
     }
-    input[type="profile"] {
-      
-      background-image: url('./assets/icons/profile-icon.png');
-      background-repeat: no-repeat;
-      background-position: left 9px center;
-      background-size: 24px;
-    }
+    
     input[type="email"] {
       background-image: url('./assets/icons/email-icon.png');
       background-repeat: no-repeat;
@@ -138,7 +132,7 @@
       text-decoration: none;
       color: #FF8906;
     }
-    .register {
+    .login {
       width: 780px;
       height: 50px;
       padding: 10px;
@@ -179,8 +173,18 @@
       width: 24px;
       height: 24px;
     }
+    .forgot-password{
+        text-align: right;
+        height: 20px;
+    }
+    .forgot-password a{
+        text-decoration: none;
+        color: #FF8906;
+        size: 16px;
+    }
+
   </style>
-  <title>Register</title>
+  <title>Login</title>
 </head>
 <body>
   <div class="background"></div>
@@ -192,15 +196,9 @@
     </div>
     
     <div class="form-section">
-      <div class="register-tittle">
-        <h2>Register</h2>
+      <div class="login-tittle">
+        <h2>Login</h2>
         <p style="height: 20px;">Fill out the form correctly</p>
-      </div>
-      <div>
-        <label for="fullname">Full Name</label>
-        <form action="">
-          <input type="profile" id="fullname" name="fullname" placeholder="Enter Your Full Name">
-        </form>
       </div>
 
       <div>
@@ -216,19 +214,15 @@
           <input type="password" id="password" name="password" placeholder="Enter Your Password">
         </form>
       </div>
-
-      <div>
-        <label for="confirm-password">Confirm Password</label>
-        <form action="">
-          <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter Your Password Again">
-        </form>
+      <div class="forgot-password">
+          <a href="/forgot-password.html">Lupa Password?</a>
       </div>
     </div>
 
-    <button class="register">Register</button>
+    <button class="login">Login</button>
 
     <div class="login-section">
-      <div>Have An Account? <a href="/login.html">Login</a></div>
+      <div>Not Have An Account? <a href="/register.html">Register</a></div>
     </div>
 
     <img src="./assets/img/or.png" alt="or">
