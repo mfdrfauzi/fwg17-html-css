@@ -811,14 +811,12 @@ footer {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  letter-spacing: 0em;
   text-align: left;
 
 }
 
 .chat-box > form{
   display: flex;
-  justify-self: flex-end;
   gap: 6px;
   padding: 0 19px;
   margin-bottom: 25px;
@@ -831,7 +829,6 @@ footer {
   height: 43px;
   padding: 0 13px;
   border-radius: 8px;
-  border: 1px;
   gap: 10px;
   border: 1px solid #DEDEDE;
   background-color: #FCFDFE;
